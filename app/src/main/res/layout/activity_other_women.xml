@@ -7,28 +7,26 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.user.womeninstem.MainActivity"
-    android:background="#20124d">
+    tools:context="com.example.user.womeninstem.OtherWomenActivity"
+    android:background="@drawable/otherbackground">
 
-    <ImageView
+    <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/imageView"
+        android:id="@+id/backButton4"
+        android:background="@drawable/leftcheveron"
+        android:onClick="onBackkButton4Click"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="43dp"
-        android:background="@drawable/logo" />
+        android:layout_alignParentStart="true" />
 
-    <Button
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Menu"
-        android:id="@+id/button"
-        android:layout_below="@+id/imageView"
-        android:layout_marginTop="47dp"
-        android:layout_alignEnd="@+id/imageView"
-        android:layout_alignStart="@+id/imageView"
-        android:background="#CAE5E5"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Other Women"
+        android:id="@+id/textView4"
         android:textColor="#20124d"
-        android:onClick="onMenukButtonClick" />
+        android:textSize="40dp"
+        android:layout_centerHorizontal="true" />
+
 </RelativeLayout>

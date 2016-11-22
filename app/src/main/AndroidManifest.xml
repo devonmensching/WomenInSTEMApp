@@ -15,6 +15,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".MenuActivity" />
+        <activity android:name=".TodaysWomanActivity" />
+        <activity android:name=".AboutActivity" />
+        <activity android:name=".OtherWomenActivity" />
+        <activity android:name=".SettingsActivity"></activity>
     </application>
 
 </manifest>
