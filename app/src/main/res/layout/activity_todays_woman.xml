@@ -7,8 +7,8 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.user.womeninstem.TodaysWomanActivity"
-    android:background="@drawable/otherbackground">
+    tools:context=".Activities.TodaysWomanActivity"
+    android:background="@drawable/thebackground">
 
     <ImageButton
         android:layout_width="wrap_content"
@@ -26,7 +26,31 @@
         android:text="Today&apos;s Women"
         android:id="@+id/textView2"
         android:textColor="#20124d"
-        android:textSize="40dp"
+        android:textSize="35dp"
         android:layout_alignParentTop="true"
-        android:layout_toEndOf="@+id/backButton2" />
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Grace Hopper"
+        android:id="@+id/nameTextView"
+        android:layout_below="@+id/backButton2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="42dp"
+        android:textSize="30dp"
+        android:textColor="#ffffff"
+        android:paddingBottom="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Grace Hopper served in the United States’ Navy. Additionally, she was a computer scientist. She invented the first complier for programming languages. Her work led to the development of the first high level programming language, COBOL.  "
+        android:id="@+id/descriptionTextView"
+        android:textSize="20dp"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/nameTextView"
+        android:layout_alignParentStart="true"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" />
 </RelativeLayout>

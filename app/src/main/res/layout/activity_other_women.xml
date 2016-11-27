@@ -7,8 +7,8 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.user.womeninstem.OtherWomenActivity"
-    android:background="@drawable/otherbackground">
+    tools:context=".Activities.OtherWomenActivity"
+    android:background="@drawable/thebackground">
 
     <ImageButton
         android:layout_width="wrap_content"
@@ -26,7 +26,7 @@
         android:text="Other Women"
         android:id="@+id/textView4"
         android:textColor="#20124d"
-        android:textSize="40dp"
+        android:textSize="35dp"
         android:layout_centerHorizontal="true" />
 
 </RelativeLayout>
