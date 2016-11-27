@@ -68,6 +68,7 @@ public class AlarmReceiver extends BroadcastReceiver{
         Intent i3 = new Intent(context, AlarmReceiver.class);
         PendingIntent pi;
 
+
         //survey alarm runs every 1 mintute (set in milliseconds)
         i1.putExtra("alarmId", 5);
         pi = PendingIntent.getBroadcast(context, 5, i1, 0);

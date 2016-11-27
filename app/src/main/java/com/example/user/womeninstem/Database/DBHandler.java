@@ -7,7 +7,7 @@ import android.util.Log;
 
 
 public class DBHandler extends SQLiteOpenHelper {
-    private static final int DATABASE_VERSION = 3;
+    private static final int DATABASE_VERSION = 4;
     public static final String DATABASE_NAME = "WomenInSTEMDB.db";
 
     // Declare Women table
@@ -22,6 +22,7 @@ public class DBHandler extends SQLiteOpenHelper {
     public static final String COLUMN_COUNTER = Counter.COLUMN_COUNTER;
     public static final String COLUMN_MUTE = Counter.COLUMN_MUTE;
     public static final String COLUMN_TIME = Counter.COLUMN_TIME;
+    public static final String COLUMN_ALARM = Counter.COLUMN_ALARM;
 
     public DBHandler(Context context) {
 
@@ -44,7 +45,8 @@ public class DBHandler extends SQLiteOpenHelper {
                 COLUMN_CID + " INTEGER, " +
                 COLUMN_COUNTER + " INTEGER, " +
                 COLUMN_MUTE + " INTEGER, " +
-                COLUMN_TIME + " INTEGER)";
+                COLUMN_TIME + " INTEGER, " +
+                COLUMN_ALARM + " INTEGER)";
 
         // Execute the SQL commands, No return value
         db.execSQL(CREATE_WOMEN_TABLE);

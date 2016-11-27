@@ -14,7 +14,6 @@ public class AlarmService extends Service {
     //sets up alarms
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
-        alarm.SetAlarm(this);
         System.out.println("Alarm Service running...");
         return START_STICKY;        //makes service persist
     }

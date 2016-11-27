@@ -9,6 +9,7 @@ import com.example.user.womeninstem.Database.Counter;
 import com.example.user.womeninstem.Database.DBOperations;
 import com.example.user.womeninstem.Database.Women;
 import com.example.user.womeninstem.R;
+import com.example.user.womeninstem.alarm.AlarmReceiver;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -93,7 +94,11 @@ public class MainActivity extends AppCompatActivity {
             dbOperations.addWomen(w31);
         }
         if (dbOperations.isCounterEmpty()) {
-            Counter counter = new Counter(1, 1, 1, 12);
+            // set alarms
+            AlarmReceiver alarmReceiver = new AlarmReceiver();
+            alarmReceiver.SetAlarm(this);
+
+            Counter counter = new Counter(1, 1, 1, 12, 1);
             dbOperations.addCounter(counter);
         }
 
