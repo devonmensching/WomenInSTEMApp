@@ -60,22 +60,23 @@
         android:textColor="#ffffff"
         android:textSize="20dp"
         android:layout_alignBottom="@+id/textView7"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:paddingEnd="30dp" />
 
     <EditText
-        android:layout_width="wrap_content"
+        android:id="@+id/timePicker"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:inputType="time"
-        android:ems="10"
-        android:id="@+id/timeEditText"
-        android:text="12:00"
-        android:background="#ffffff"
-        android:textSize="15dp"
-        android:textAlignment="center"
-        android:layout_alignBottom="@+id/textView7"
-        android:layout_alignParentEnd="true"
-        android:layout_alignStart="@+id/muteToggleButton"
-        android:paddingTop="10dp" />
+        android:hint="Select Time..."
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:background="#d4d4d4"
+        android:padding="15dp"
+        android:textSize="15sp"
+        android:layout_alignTop="@+id/textView8"
+        android:layout_alignEnd="@+id/muteToggleButton"
+        android:layout_toEndOf="@+id/textView8"
+        android:nestedScrollingEnabled="false" />
 
     <Button
         android:layout_width="wrap_content"
@@ -86,8 +87,8 @@
         android:textColor="#20124d"
         android:onClick="onSaveButton5Click"
         android:layout_alignParentBottom="true"
-        android:layout_alignEnd="@+id/timeEditText"
         android:layout_alignParentStart="true"
-        android:textSize="15dp" />
+        android:textSize="15dp"
+        android:layout_alignParentEnd="true" />
 
 </RelativeLayout>

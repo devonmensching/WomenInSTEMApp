@@ -33,7 +33,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Grace Hopper served in the United States’ Navy. Additionally, she was a computer scientist. She invented the first complier for programming languages. Her work led to the development of the first high level programming language, COBOL.  "
+        android:text="The Inspired by Women in STEM application was created to challenge the chilly climate by educating users on the achievements of women in STEM. By informing users about the achievements of women in STEM, the application will dispel beliefs that only men are successful in STEM fields. The application will benefit all women who strive to be successful in the STEM fields.  "
         android:id="@+id/textView6"
         android:textSize="20dp"
         android:textColor="#ffffff"

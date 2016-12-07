@@ -27,8 +27,8 @@ public class TodaysWomanActivity extends AppCompatActivity {
         nameTextView = (TextView) findViewById(R.id.nameTextView);
         descriptionTextView = (TextView) findViewById(R.id.descriptionTextView);
 
-        nameTextView.setText(Integer.toString(counter));
-       // descriptionTextView.setText(women.getDescrption());
+        nameTextView.setText(women.getName());
+        descriptionTextView.setText(women.getDescrption());
     }
 
     public void onBackkButton2Click(View view) {

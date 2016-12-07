@@ -50,8 +50,8 @@ public class NotificationTask {
             NotificationCompat.Builder builder = new NotificationCompat.Builder(mContext);
 
             Notification notification = builder.setContentTitle(params[0])
-                    .setContentText("Please fill out a survey about your day!")
-                    .setTicker("Pregnancy Diary")
+                    .setContentText("Read about today's featured woman!")
+                    .setTicker("Insipred by Women in STEM")
                     .setVibrate(new long[] { 1000, 1000 })
                     .setSound(RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION))
                     .setLights(Color.RED, 3000, 3000)

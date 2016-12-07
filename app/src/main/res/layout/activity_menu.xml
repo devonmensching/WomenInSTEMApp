@@ -24,10 +24,11 @@
         android:layout_height="wrap_content"
         android:id="@+id/todaysWomenButton"
         android:layout_marginTop="53dp"
-        android:background="@drawable/todaywomenicon"
+        android:background="@drawable/womanicon"
         android:layout_below="@+id/backButton1"
         android:layout_alignParentStart="true"
-        android:onClick="onTodayWomanIconClick" />
+        android:onClick="onTodayWomanIconClick"
+        android:paddingBottom="50dp" />
 
     <ImageButton
         android:layout_width="wrap_content"
@@ -36,26 +37,27 @@
         android:background="@drawable/abouticon"
         android:layout_alignTop="@+id/todaysWomenButton"
         android:layout_alignParentEnd="true"
-        android:onClick="onAboutIconClick" />
+        android:onClick="onAboutIconClick"
+        android:paddingBottom="10dp" />
 
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/otherWomenButton"
-        android:layout_marginTop="82dp"
-        android:background="@drawable/otherwomenicon"
-        android:layout_below="@+id/aboutButton"
-        android:layout_alignParentStart="true"
-        android:onClick="onOtherWomenIconClick" />
+        android:background="@drawable/womenicon"
+        android:onClick="onOtherWomenIconClick"
+        android:paddingTop="100dp"
+        android:layout_below="@+id/todaysWomenButton"
+        android:layout_toStartOf="@+id/imageButton5" />
 
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/imageButton5"
         android:background="@drawable/settingsicon"
+        android:onClick="onSettingsIconClick"
         android:layout_alignTop="@+id/otherWomenButton"
-        android:layout_alignStart="@+id/aboutButton"
-        android:onClick="onSettingsIconClick" />
+        android:layout_alignStart="@+id/aboutButton" />
 
     <TextView
         android:layout_width="wrap_content"

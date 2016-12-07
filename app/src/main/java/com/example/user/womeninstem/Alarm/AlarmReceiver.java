@@ -8,6 +8,7 @@ import android.content.Intent;
 import android.os.PowerManager;
 import android.util.Log;
 
+import com.example.user.womeninstem.Database.Counter;
 import com.example.user.womeninstem.Database.DBOperations;
 
 import java.util.Calendar;
@@ -37,15 +38,19 @@ public class AlarmReceiver extends BroadcastReceiver{
                 AlarmService a = new AlarmService();
                 context.startService(new Intent(context, AlarmService.class));
 
+                DBOperations dbOperations = new DBOperations(context);
+                Counter counter = dbOperations.getCounter();
+
                 // send notification
-                NotificationTask notificationTask = new NotificationTask(context);
-                notificationTask.sendNotification("Today's Woman in STEM");
+                if(counter.getMute() == 1) {
+                    NotificationTask notificationTask = new NotificationTask(context);
+                    notificationTask.sendNotification("Inspired by Women in STEM");
+                }
 
                 // Update the counter
-                DBOperations dbOperations = new DBOperations(context);
-                int counter = dbOperations.getCounter().getCounter();
-                if(counter < 31){
-                    dbOperations.updateCounter(counter+1);
+                int c = counter.getCounter();
+                if(c < 31){
+                    dbOperations.updateCounter(c+1);
                 }
                 else {
                     dbOperations.updateCounter(0);

@@ -16,7 +16,6 @@
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <uses-permission android:name="android.permission.BLUETOOTH" />
 
-
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -44,8 +43,7 @@
         <activity android:name=".Activities.TodaysWomanActivity" />
         <activity android:name=".Activities.AboutActivity" />
         <activity android:name=".Activities.OtherWomenActivity" />
-        <activity android:name=".Activities.SettingsActivity"></activity>
-
-
+        <activity android:name=".Activities.SettingsActivity" />
     </application>
+
 </manifest>
