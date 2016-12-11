@@ -1,4 +1,4 @@
-package com.example.user.womeninstem.alarm;
+package com.dm.user.womeninstem.alarm;
 
 import android.app.AlarmManager;
 import android.app.PendingIntent;
@@ -8,8 +8,8 @@ import android.content.Intent;
 import android.os.PowerManager;
 import android.util.Log;
 
-import com.example.user.womeninstem.Database.Counter;
-import com.example.user.womeninstem.Database.DBOperations;
+import com.dm.user.womeninstem.Database.Counter;
+import com.dm.user.womeninstem.Database.DBOperations;
 
 import java.util.Calendar;
 
@@ -78,23 +78,6 @@ public class AlarmReceiver extends BroadcastReceiver{
         i1.putExtra("alarmId", 5);
         pi = PendingIntent.getBroadcast(context, 5, i1, 0);
         calendar.set(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 12, 0);
-        alarmManager.setRepeating(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(), 1000*60*60*24, pi);
-    }
-
-    public void SetAlarm(Context context, int time) {
-        Log.i("Survey Alarm", "Alarm is set.");
-        Calendar calendar = Calendar.getInstance();
-        calendar.setTimeInMillis(System.currentTimeMillis());
-        alarmManager = (AlarmManager) context.getSystemService(Context.ALARM_SERVICE);
-        Intent i1 = new Intent(context, AlarmReceiver.class);
-        Intent i2 = new Intent(context, AlarmReceiver.class);
-        Intent i3 = new Intent(context, AlarmReceiver.class);
-        PendingIntent pi;
-
-        //survey alarm runs every 1 mintute (set in milliseconds)
-        i1.putExtra("alarmId", 5);
-        pi = PendingIntent.getBroadcast(context, 5, i1, 0);
-        calendar.set(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, time, 0);
         alarmManager.setRepeating(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(), 1000*60*60*24, pi);
     }
 

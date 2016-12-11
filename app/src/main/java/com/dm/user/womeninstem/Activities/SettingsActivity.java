@@ -1,4 +1,4 @@
-package com.example.user.womeninstem.Activities;
+package com.dm.user.womeninstem.Activities;
 
 import android.app.TimePickerDialog;
 import android.content.Intent;
@@ -9,10 +9,9 @@ import android.widget.EditText;
 import android.widget.TimePicker;
 import android.widget.ToggleButton;
 
-import com.example.user.womeninstem.Database.Counter;
-import com.example.user.womeninstem.Database.DBOperations;
-import com.example.user.womeninstem.R;
-import com.example.user.womeninstem.alarm.AlarmReceiver;
+import com.dm.user.womeninstem.Database.Counter;
+import com.dm.user.womeninstem.Database.DBOperations;
+import com.dm.user.womeninstem.R;
 
 import java.util.Calendar;
 
@@ -82,14 +81,6 @@ public class SettingsActivity extends AppCompatActivity {
             dbOperations.updateMute(1);
         }else if(!muteButton.isChecked()) {
             dbOperations.updateMute(0);
-        }
-        String timeSelected = time.getText().toString();
-        if(!timeSelected.equals("Select Time...")){
-            String[] splitTime = timeSelected.split(":");
-            int newTime = Integer.parseInt(splitTime[0]);
-            dbOperations.updateTime(newTime);
-            AlarmReceiver alarmReceiver = new AlarmReceiver();
-            alarmReceiver.SetAlarm(this, newTime);
         }
 
         Intent intent = new Intent(this, MenuActivity.class);

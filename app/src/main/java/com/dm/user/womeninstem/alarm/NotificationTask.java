@@ -1,4 +1,4 @@
-package com.example.user.womeninstem.alarm;
+package com.dm.user.womeninstem.alarm;
 
 import android.app.Notification;
 import android.app.NotificationManager;
@@ -11,9 +11,9 @@ import android.os.AsyncTask;
 import android.support.v4.app.NotificationCompat;
 import android.support.v4.app.TaskStackBuilder;
 
-import com.example.user.womeninstem.Activities.MainActivity;
-import com.example.user.womeninstem.Activities.TodaysWomanActivity;
-import com.example.user.womeninstem.R;
+import com.dm.user.womeninstem.Activities.MainActivity;
+import com.dm.user.womeninstem.Activities.TodaysWomanActivity;
+import com.dm.user.womeninstem.R;
 
 /**
  * Created by user on 11/1/2016.

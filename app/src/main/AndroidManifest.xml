@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.user.womeninstem">
+    package="com.dm.user.womeninstem">
 
     <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
     <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />
@@ -22,7 +22,7 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Activities.MainActivity">
+        <activity android:name="com.dm.user.womeninstem.Activities.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -31,19 +31,19 @@
         </activity>
 
         <receiver
-            android:name=".alarm.AlarmReceiver"
+            android:name="com.dm.user.womeninstem.alarm.AlarmReceiver"
             android:process=":remote" />
 
         <service
-            android:name=".alarm.AlarmService"
+            android:name="com.dm.user.womeninstem.alarm.AlarmService"
             android:enabled="true"
             android:process=":AlarmService" />
 
-        <activity android:name=".Activities.MenuActivity" />
-        <activity android:name=".Activities.TodaysWomanActivity" />
-        <activity android:name=".Activities.AboutActivity" />
-        <activity android:name=".Activities.OtherWomenActivity" />
-        <activity android:name=".Activities.SettingsActivity" />
+        <activity android:name="com.dm.user.womeninstem.Activities.MenuActivity" />
+        <activity android:name="com.dm.user.womeninstem.Activities.TodaysWomanActivity" />
+        <activity android:name="com.dm.user.womeninstem.Activities.AboutActivity" />
+        <activity android:name="com.dm.user.womeninstem.Activities.OtherWomenActivity" />
+        <activity android:name="com.dm.user.womeninstem.Activities.SettingsActivity" />
     </application>
 
 </manifest>

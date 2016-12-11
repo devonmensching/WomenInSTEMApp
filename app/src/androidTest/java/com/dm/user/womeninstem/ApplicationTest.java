@@ -1,4 +1,4 @@
-package com.example.user.womeninstem;
+package com.dm.user.womeninstem;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

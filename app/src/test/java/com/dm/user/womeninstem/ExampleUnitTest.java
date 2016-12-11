@@ -1,4 +1,4 @@
-package com.example.user.womeninstem;
+package com.dm.user.womeninstem;
 
 import org.junit.Test;
 

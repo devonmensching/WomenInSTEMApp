@@ -1,15 +1,15 @@
-package com.example.user.womeninstem.Activities;
+package com.dm.user.womeninstem.Activities;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
-import com.example.user.womeninstem.Database.Counter;
-import com.example.user.womeninstem.Database.DBOperations;
-import com.example.user.womeninstem.Database.Women;
-import com.example.user.womeninstem.R;
-import com.example.user.womeninstem.alarm.AlarmReceiver;
+import com.dm.user.womeninstem.Database.Counter;
+import com.dm.user.womeninstem.Database.DBOperations;
+import com.dm.user.womeninstem.Database.Women;
+import com.dm.user.womeninstem.R;
+import com.dm.user.womeninstem.alarm.AlarmReceiver;
 
 public class MainActivity extends AppCompatActivity {
 
